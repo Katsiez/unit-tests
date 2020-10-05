@@ -1,4 +1,4 @@
 export const hashtags = (text) => {
-  text.split('').filter(hashtags => hashtags.startsWith('#'))
-  return text
+  const returnHash = text.split('').filter(hashtags => hashtags.startsWith('#'))
+  return returnHash
 }
