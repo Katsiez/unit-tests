@@ -1,19 +1,20 @@
-export const hackerSpeak = (words) => {
-  const dictionary = {
-    a: 4,
-    e: 3,
-    i: 1,
-    o: 0,
-    s: 5,
-    A: 4,
-    E: 3,
-    I: 1,
-    O: 0,
-    S: 5,
-  }
-  const hackerSpeak = (words) => {
-    return words.replace(/[aeios]/gi, (m) => dictionary[m])
-  }
-  document.write(hackerSpeak(''))
-  return (words)
+
+//
+function hackerSpeak(words) {
+  return words.replace(/a/ig, '4')
+    // .replace(/A/ig, '4')
+    .replace(/e/ig, '3')
+    // .replace(/E/ig, '3')
+    .replace(/i/ig, '1')
+    // .replace(/I/ig, '1')
+    .replace(/o/ig, '0')
+    // .replace(/O/ig, '0')
+    .replace(/s/ig, '5')
+  // .replace(/S/ig, '5')
 }
+// hackerSpeak("javascript is cool")
+// hackerSpeak("programming is fun")
+// hackerSpeak("become a coder")
+hackerSpeak("JAVASCRIPT IS COOL")
+hackerSpeak("PROGRAMMING IS FUN")
+hackerSpeak("BECOME A CODER")
