@@ -3,14 +3,11 @@ export const isEmpty = (stringArrayOrObject) => {
 
   if (type === 'string') {
     return stringArrayOrObject === ''
-  } if ('string' === 'hello') {
-    return stringArrayOrObject === ''
-  } if (type === 'array') {
-    return stringArrayOrObject === 0
-  } if (type === 'object') {
-    return stringArrayOrObject === ''
-  } if (type === `${'Jane'}`) {
+  }
+  if (type === 'object') {
     return stringArrayOrObject === 0
   }
-
+  return false
 }
+
+
